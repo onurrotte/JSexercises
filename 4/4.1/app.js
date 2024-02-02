@@ -1,4 +1,4 @@
-book = {
+const book = {
     writer: "Daron Acemoğlu",
     title: "Why Nation Fail",
     language: "English ad Turkish",
