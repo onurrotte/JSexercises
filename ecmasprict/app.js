@@ -1,0 +1,89 @@
+//Exercises 1 - ECMAScript6
+//Exercise 1
+// const person = {
+//     name: "onur",
+//     age: 31,
+//     nationality: "turk",
+// }
+// var {name, firstName:  age, years:  isAdmin=false} = person
+// firstName = "baba"
+// console.log(firstName) // baba
+
+// Exercise 2
+
+// const planet = "earth";
+// const visitor = "ordinary name"
+// console.log(visitor)
+
+//Exercise 3
+// Look at the code. What will be the result of the call at the last line and why?
+
+// let phrase = "Hello"
+
+// if (true) {
+//   let user = "John";
+//   function sayHi() {
+//     alert(`${phrase}, ${user}`)
+//   }
+// }
+
+// sayHi() // ı think we can not reach from outside to inside of function. (Function is in if condition.)
+
+//Exercise 4
+// Create an empty object user.
+// Add the property name with the value John.
+// Add the property surname with the value Smith.
+// Change the value of the name to Pete.
+// Remove the property name from the object.
+
+// var user = {};
+// user.name = "John";
+// user.surname = "Smith";
+// console.log(user) // works
+//  user.name = "Pete";
+// delete user.name 
+// console.log(user) // works
+
+//Exercise 5
+
+//Is it possible to change an object declared with const, how do you think and why?
+
+// const user = {
+//     firstName: "John"
+//   }
+//   user.firstName = "Pete"
+//   console.log(user.firstName)  //  I tried and it is working. I thought we are changing directly value of key. 
+
+
+//Exercise 6
+//Write a code to sum all salaries and store in the variable sum. If salaries is empty, then the result must be 0.
+
+// let salaries = {
+//     Fred: 100,
+//     Ted: 160,
+//     Ghaith: 130,
+  
+ //var sumSalaries = salaries.Fred + salaries.Ted + salaries.Ghaith
+ //console.log(sumSalaries)
+
+ //second method
+//  let sum = 0
+//     for (let key in salaries){
+//         sum += salaries[key];
+//     }
+//     console.log(sum)
+ 
+// 7.
+// if (a + b < 4) {
+//     result = 'Below';
+//   } else {
+//     result = 'Over';
+//   }
+
+// let result = (a+b<4)? "Below": "Over" ;
+
+
+
+// Exercise 8
+// Rewrite if..else using multiple ternary operators '?'.
+
