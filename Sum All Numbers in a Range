@@ -1,0 +1,14 @@
+function sumAll(arr){
+    //create two variable for min and max value of the array
+let max = Math.max(...arr);
+let min = Math.min(...arr);
+// sum will start from 0 value
+let tot = 0;
+// use every value in the array and sum all of them
+for (let i=min ; i<=max ; i++){
+ tot += i;
+}
+// give the result as a total
+return tot 
+}
+console.log(sumAll([9,3]))
