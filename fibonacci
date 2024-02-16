@@ -1,0 +1,25 @@
+//create a function and empty array for holding result.
+//first two value will not change 0,1. Describe them
+//set a new arr u, for the between numbers 2 and n 
+//callback again with what you want
+function fiboCreater(n){
+    let arr=[];
+    if(n===1){
+        arr.push(0);
+    }
+    else if(n===2){
+        arr.push(0,1);
+    }
+    else{
+        arr.push(0,1);
+        for(let i= 2 ; i<n ; i++){
+            let u = arr[i-2]+arr[i-1]
+            arr.push(u)
+        }
+        console.log(arr)
+
+    }
+
+}
+let n = (9)
+console.log(fiboCreater(n))
