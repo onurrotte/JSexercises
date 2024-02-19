@@ -1,0 +1,12 @@
+unction titleCase(str){
+    let arr = str.split(" "); // create new array 
+    for(let i=0; i< arr.length ; i++ ){  
+        let word = arr[i].toLowerCase(); // visit every value and make to lowercase
+        word = word[0].toUpperCase() + word.slice(1); // choose 0.value and make again upper
+        arr[i] = word;  
+
+    }
+    return arr.join(" ") // 
+}
+
+console.log(titleCase("ı'm a little tea pot"));
